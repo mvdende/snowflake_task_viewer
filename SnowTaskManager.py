@@ -87,7 +87,7 @@ def load_data_task_list():
 
     df_task.to_csv(task_list_file, index=False)
     final_df_task_list = pd.read_csv(task_list_file)
-     loadtime_list = current_dt()
+    loadtime_list = current_dt()
     print('Task List Data is loaded from Snowflake at: ', loadtime_list)
     return final_df_task_list, loadtime_list
 
