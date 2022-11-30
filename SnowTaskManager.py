@@ -366,10 +366,10 @@ with st.sidebar:
 # download_data_task_list()
 st.sidebar.markdown(
     """
-**Welcome!** This is an unofficial Task Manager for Snowflake Data Cloud. The application can be used to:
-**❄ View Task Statistics.**
-**❄ See Task List.**
-**❄ See Execution History.**
+**Welcome!** This is an unofficial Task Manager for Snowflake Data Cloud. The application can be used to:\n
+**❄ View Task Statistics.**\n
+**❄ See Task List.**\n
+**❄ See Execution History.**\n
 **❄ Execute a Task Ad hoc.**
 """
 )
