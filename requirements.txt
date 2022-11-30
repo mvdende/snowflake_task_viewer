@@ -1,7 +1,6 @@
 #Requirements file
-time
-datetime
-tzlocal
 pandas
 plotly
-snowflake
+st_aggrid
+snowflake-connector-python
+
