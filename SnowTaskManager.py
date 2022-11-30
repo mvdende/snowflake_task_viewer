@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 import tzlocal
 import pandas as pd
-import plotly.graph.objects as go
+import plotly.graph_objects as go
 import snowflake.connector
 import streamlit as st
 from plotly.subplots import make_subplots
