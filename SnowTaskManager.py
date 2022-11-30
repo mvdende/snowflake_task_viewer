@@ -100,12 +100,12 @@ def load_data_task_list():
 @st.experimental_singleton
 def load_data_task_hist():
     current_dt()
-    st.write("SELECT NAME, DATABASE_NAME,  SCHEMA_NAME, date_trunc( 'second', CONVERT_TIMEZONE(" + current_tz +
-        ", SCHEDULED_TIME) ) as SCHEDULED_TIME, STATE, date_trunc( 'second', CONVERT_TIMEZONE(" + current_tz +
-        ", QUERY_START_TIME) ) as START_TIME, date_trunc( 'second', CONVERT_TIMEZONE(" + current_tz +
-        ", COMPLETED_TIME) ) as END_TIME, TIMESTAMPDIFF('millisecond', "
-        "QUERY_START_TIME, COMPLETED_TIME) as DURATION, ERROR_CODE, ERROR_MESSAGE, QUERY_ID, "
-        "NEXT_SCHEDULED_TIME, SCHEDULED_FROM FROM TABLE(SNOWFLAKE.INFORMATION_SCHEMA.TASK_HISTORY()) ORDER BY SCHEDULED_TIME DESC")
+    #st.write("SELECT NAME, DATABASE_NAME,  SCHEMA_NAME, date_trunc( 'second', CONVERT_TIMEZONE(" + current_tz +
+    #    ", SCHEDULED_TIME) ) as SCHEDULED_TIME, STATE, date_trunc( 'second', CONVERT_TIMEZONE(" + current_tz +
+    #    ", QUERY_START_TIME) ) as START_TIME, date_trunc( 'second', CONVERT_TIMEZONE(" + current_tz +
+    #    ", COMPLETED_TIME) ) as END_TIME, TIMESTAMPDIFF('millisecond', "
+    #    "QUERY_START_TIME, COMPLETED_TIME) as DURATION, ERROR_CODE, ERROR_MESSAGE, QUERY_ID, "
+    #    "NEXT_SCHEDULED_TIME, SCHEDULED_FROM FROM TABLE(SNOWFLAKE.INFORMATION_SCHEMA.TASK_HISTORY()) ORDER BY SCHEDULED_TIME DESC")
     ls_all = run_query(
         "SELECT NAME, DATABASE_NAME,  SCHEMA_NAME, date_trunc( 'second', CONVERT_TIMEZONE(" + current_tz +
         ", SCHEDULED_TIME) ) as SCHEDULED_TIME, STATE, date_trunc( 'second', CONVERT_TIMEZONE(" + current_tz +
@@ -382,7 +382,7 @@ st.sidebar.info(
 st.sidebar.title("About")
 st.sidebar.info(
     """
-    Created by [Sudhendu Pandey](https://sudhendu.com/), Principal Architect at [KIPI.BI](https://kipi.bi).
+    Created by VALCON.
 """
 )
 
