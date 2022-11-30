@@ -373,12 +373,7 @@ st.sidebar.markdown(
 **❄ Execute a Task Ad hoc.**
 """
 )
-st.sidebar.title("Open Code")
-st.sidebar.info(
-    "This an weekend project and you are very welcome to use it as it. "
-    "No gurantee. "
-    "[source code](https://github.com/MarcSkovMadsen/awesome-streamlit). "
-)
+
 st.sidebar.title("About")
 st.sidebar.info(
     """
