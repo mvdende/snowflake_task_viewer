@@ -34,3 +34,15 @@ hide_table_row_index = """
 st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
 # setting page config- END
+
+# Variable declaration START
+file_dir = os.path.dirname(os.path.dirname(__file__))
+task_list_file = (file_dir + '/data/task.csv')
+task_hist_file = (file_dir + '/data/task_hist.csv')
+current_tz = "'" + tzlocal.get_localzone_name() + "'"
+print(tzlocal.get_localzone_name())
+print(file_dir)
+print(task_list_file)
+print(task_hist_file)
+
+
