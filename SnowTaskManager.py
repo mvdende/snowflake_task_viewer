@@ -386,6 +386,7 @@ st.sidebar.info(
 """
 )
 
+
 # Sidebar definition END
 
 # Loading Data from Snowflake END
