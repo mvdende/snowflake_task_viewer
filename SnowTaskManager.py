@@ -37,8 +37,8 @@ st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
 # Variable declaration START
 file_dir = os.path.dirname(os.path.dirname(__file__))
-task_list_file = (file_dir + '/data/task.csv')
-task_hist_file = (file_dir + '/data/task_hist.csv')
+task_list_file = (file_dir + '/snowflake_task_viewer/data/task.csv')
+task_hist_file = (file_dir + '/snowflake_task_viewer/data/task_hist.csv')
 current_tz = "'" + tzlocal.get_localzone_name() + "'"
 print(tzlocal.get_localzone_name())
 print(file_dir)
