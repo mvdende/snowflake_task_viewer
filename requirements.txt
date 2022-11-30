@@ -1,1 +1,7 @@
 #Requirements file
+time
+datetime
+tzlocal
+pandas
+plotly
+snowflake
