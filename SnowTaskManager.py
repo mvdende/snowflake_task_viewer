@@ -378,7 +378,7 @@ This is an unofficial Task Manager for Snowflake Data Cloud. The application can
 st.sidebar.title("About")
 st.sidebar.info(
     """
-    Created by VALCON.
+    Created by VALCON BV.
 """
 )
 
